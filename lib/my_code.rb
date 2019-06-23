@@ -14,7 +14,7 @@ def reduce(array, starting_value = nil)
       i = 0
    else 
      block = array[0]
-     i = 1 
+     i = 0 
    end 
   while i < array.length 
       block = (yield(array[i], starting_value = block))
