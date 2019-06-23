@@ -17,8 +17,8 @@ def reduce(array, starting_value = nil)
      i = 1 
    end 
   while i < array.length 
-      this = (yield(array[i], block))
+      block = (yield(array[i], block))
     i += 1
 end 
-   return this 
+   return block 
  end 
