@@ -20,5 +20,5 @@ def reduce(array, starting_value = nil)
       this = (yield(array[i], block))
     i += 1
 end 
-   return block 
+   return this 
  end 
